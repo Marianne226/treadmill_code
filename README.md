@@ -3,14 +3,14 @@
 A robotic treadmill system designed for neuroscience research with rodents, featuring automated body weight support (BWS) compensation.
 
 <p align="center">
-  <img src="images/treadmill_image.jpeg" alt="G-Mill Treadmill Robot" width="600">
+  <img src="images/treadmill_image.jpeg" alt="G-Mill Treadmill Robot" width="400">
 </p>
 
 ## Project Overview
 
 ### Background
 
-The G-Mill hardware was designed and built by Alexandre Lechartier, a previous student at G-lab (Grégoire Courtine's laboratory at EPFL). The mechanical system, including the treadmill, body weight support mechanism, and electronics, was already in place but the software was incomplete.
+The G-Mill hardware was designed and built by a previous student at G-lab (Grégoire Courtine's laboratory at EPFL). The mechanical system, including the treadmill, body weight support mechanism, and electronics, was already in place but the software was incomplete.
 
 **This project's goal was to complete the software implementation** to achieve a fully functional treadmill with body weight support compensation. The main software contributions include:
 
