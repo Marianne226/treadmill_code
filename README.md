@@ -230,4 +230,4 @@ Additional documentation is available in the repository root:
 
 ## License
 
-This project was developed as a Master's thesis. Please contact the author for usage permissions.
+This project was developed as a student project. Please contact the author for usage permissions.
