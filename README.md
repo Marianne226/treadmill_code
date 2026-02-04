@@ -1,6 +1,6 @@
 # G-Mill - Rodent Treadmill with Body Weight Support
 
-A robotic treadmill system designed for neuroscience research with rodents (mice and rats), featuring automated body weight support (BWS) compensation.
+A robotic treadmill system designed for neuroscience research with rodents, featuring automated body weight support (BWS) compensation.
 
 <p align="center">
   <img src="images/treadmill_image.jpeg" alt="G-Mill Treadmill Robot" width="600">
