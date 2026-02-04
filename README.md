@@ -2,6 +2,10 @@
 
 A robotic treadmill system designed for neuroscience research with rodents (mice and rats), featuring automated body weight support (BWS) compensation.
 
+<p align="center">
+  <img src="images/treadmill_image.jpeg" alt="G-Mill Treadmill Robot" width="600">
+</p>
+
 ## Project Overview
 
 ### Main Objectives
@@ -32,6 +36,11 @@ The project consists of two main components:
 ```
 treadmill_code/
 ├── README.md
+├── images/                         # Project images
+│   ├── treadmill_image.jpeg        # Main robot image
+│   ├── FSM_states.png              # State machine diagram
+│   ├── arduino.JPG                 # Arduino location
+│   └── backside.JPG                # Backside view
 ├── code/
 │   ├── G-Mill_Marianne.py          # Python GUI application
 │   └── GMill_sw-main/              # Arduino firmware (PlatformIO project)
@@ -46,10 +55,9 @@ treadmill_code/
 │           ├── motorencoders.h/.cpp    # Motor position encoders
 │           ├── bwsencoders.h/.cpp      # BWS position encoders
 │           └── endswitches.h/.cpp      # Safety limit switches
-└── docs/
-    ├── project_report_marianne_compressed.pdf
-    ├── Support_for_next_student.pdf
-    └── User_manual.pdf
+├── project_report_marianne_compressed.pdf
+├── Support_for_next_student.pdf
+└── User_manual.pdf
 ```
 
 ### Firmware Modules (C++/Arduino)
@@ -82,6 +90,10 @@ The `G-Mill_Marianne.py` file provides a Tkinter-based graphical interface with:
 
 The system operates through these states:
 
+<p align="center">
+  <img src="images/FSM_states.png" alt="State Machine Diagram" width="500">
+</p>
+
 | State | Description |
 |-------|-------------|
 | `FSM_off` | System off, motors disabled |
@@ -107,6 +119,17 @@ The system operates through these states:
 - **End Switches**: 8x limit switches for BWS safety (pins 34-41)
 - **Manual Encoder**: Rotary encoder with push button (pins 30, 31, 33)
 - **Connection**: USB Serial at 115200 baud
+
+### Hardware Architecture
+
+<p align="center">
+  <img src="images/arduino.JPG" alt="Arduino Due location" width="400">
+  <img src="images/backside.JPG" alt="Backside with Raspberry Pi" width="400">
+</p>
+
+<p align="center">
+  <em>Left: Arduino Due located inside the robot core. Right: Backside showing Raspberry Pi and connections.</em>
+</p>
 
 ### Software Requirements
 
@@ -183,11 +206,13 @@ Data is exchanged as formatted strings:
 
 ## Documentation
 
-Additional documentation is available in the repository:
+Additional documentation is available in the repository root:
 
-- `project_report_marianne_compressed.pdf` - Full thesis report
-- `Support_for_next_student.pdf` - Development continuation guide
-- `User_manual.pdf` - Detailed user manual
+| Document | Description |
+|----------|-------------|
+| `project_report_marianne_compressed.pdf` | Full semester project report with technical details |
+| `Support_for_next_student.pdf` | Guide for continuing development |
+| `User_manual.pdf` | Detailed user manual for operating the robot |
 
 ---
 
