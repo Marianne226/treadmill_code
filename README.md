@@ -8,9 +8,21 @@ A robotic treadmill system designed for neuroscience research with rodents, feat
 
 ## Project Overview
 
+### Background
+
+The G-Mill hardware was designed and built by Alexandre Lechartier, a previous student at G-lab (Grégoire Courtine's laboratory at EPFL). The mechanical system, including the treadmill, body weight support mechanism, and electronics, was already in place but the software was incomplete.
+
+**This project's goal was to complete the software implementation** to achieve a fully functional treadmill with body weight support compensation. The main software contributions include:
+
+- Fixing communication issues between the Arduino and Raspberry Pi
+- Implementing the calibration procedure for the body weight support system
+- Developing the body weight compensation algorithm
+- Creating a reliable user interface
+- Fixing and replacing minor hardware components
+
 ### Main Objectives
 
-The G-Mill system is a Master's thesis project that provides:
+The G-Mill system provides:
 
 1. **Motorized Treadmill Control** - Precise speed control with progressive acceleration/deceleration for smooth rodent locomotion studies
 2. **Body Weight Support (BWS)** - Automated system that supports a configurable percentage of the rodent's body weight during experiments, essential for rehabilitation and locomotion research
